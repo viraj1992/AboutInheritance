@@ -9,6 +9,7 @@ public class Vehicle {
 	private int speed;
 	private final boolean hasBrakingSystem = true;
 	private int numberOfWheels;
+	private int rideSpeed;
 	
 	// Created Constructor
 	
@@ -40,6 +41,26 @@ public class Vehicle {
 	public int getNumberOfWheels() {
 		return numberOfWheels;
 	}
+	
+	public int getRideSpeed() {
+		return rideSpeed;
+	}
+
+	public void setRideSpeed(int rideSpeed) {
+		this.rideSpeed = rideSpeed;
+	}
+	
+	// Instance method ride
+	
+	public void ride() {
+		int result = getSpeed() * getNumberOfWheels();
+		rideSpeed = result;
+	}
+
+
+
+
+	
 	
 	
 	
