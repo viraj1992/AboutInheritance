@@ -60,7 +60,7 @@ public class Vehicle {
 	@Override
 	public String toString() {
 		
-		return String.format("%s : %d | %s : %b | %s : %d | %s : %d" , "Speed", getRideSpeed(), "Has Breaking System"
+		return String.format("%s : %d | %s : %b | %s : %d | %s : %d" , "Speed", getSpeed(), "Has Breaking System"
 				, getHasBrakingSystem()  ,"Number of Wheels", getNumberOfWheels(), "Ride Speed", getRideSpeed());
 	}
 
