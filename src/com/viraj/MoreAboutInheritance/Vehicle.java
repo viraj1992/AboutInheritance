@@ -57,6 +57,17 @@ public class Vehicle {
 		rideSpeed = result;
 	}
 
+	@Override
+	public String toString() {
+		
+		return String.format("%s : %d | %s : %b | %s : %d | %s : %d" , "Speed", getRideSpeed(), "Has Breaking System"
+				, getHasBrakingSystem()  ,"Number of Wheels", getNumberOfWheels(), "Ride Speed", getRideSpeed());
+	}
+
+	public boolean getHasBrakingSystem() {
+		return hasBrakingSystem;
+	}
+	
 
 
 
